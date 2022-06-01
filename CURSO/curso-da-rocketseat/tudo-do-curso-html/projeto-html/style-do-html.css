@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    margin: 8px;
+    background-image: linear-gradient(to bottom, rgb(204, 243, 163), rgba(0, 0, 255, 0.38));
+}
+
+p {
+    margin: 8px;
+    text-align: justify;
+    text-indent: 20pt;
+}
+
+h1 {
+    color: rgb(248, 5, 5);
+}
+
+h2 {
+    color: blue
+}
+
+li {
+    list-style-position: inside;
+    
+}
+#margen-left{
+    text-align: left;
+}
+pre {
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px black;
+    text-align: justify;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    color: aqua;
+
+    
+}
+/*code {
+    color: aqua;
+}*/
+/*
+table { tenho que saber centralizar tabela pelo css
+;
+}
+*/
+table {
+    margin: auto;
+
+}

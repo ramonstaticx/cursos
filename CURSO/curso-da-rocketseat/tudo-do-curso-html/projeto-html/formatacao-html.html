@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação do Html</title>
+    <link rel="stylesheet" href="./style-do-html.css">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <picture style="margin-right: 90% ;">
+        <a href="./index.html"><img src="../imagens/voltar-pagina-azul.png" width= 30px" alt=""></a>
+    </picture>
+    <header>
+        <h1>FORMATAÇÃO NO HTML</h1>
+
+           <p> No html usamos algumas tags para melhor formatar a página, como usar a tag &lt;h1&gt; é mais usada para por títulos e &lt;h2 &gt;para subtítulo, e os mais conhecidos vai até h6.</p>
+            <p>Usamos também para parágrafos a tag p
+            </p>
+    </header>
+    <div>
+        <h2>TAG &lt;p&gt; e &lt;br&gt;</h2>
+        <p>
+            Para sinalizar que é um parágrafo só e nada mais, usamos a tag <strong>&lt;p&gt;</strong> mas ela é uma tag que abre
+            e tem que ser
+            fechada, e após fechada automaticamente ela pula para a próxima linha no navegador
+            ex:
+            <br>
+            <pre>
+                <code>
+                    &lt;p&gt; texto&lt;/p&gt;
+                </code>
+            </pre>
+        </p>
+        <p>A tag <strong>&lt;br&gt;</strong> é usada para simplesmente pular linha e não tem que fechar
+        </p>
+        <p>Um belo exemplo da quebra de linha está abaixo</p>
+        <pre>
+            <code>
+                testado fator br&lt;br&gt; como quebra a linha em&lt;br&gt; um &lt;br&gt;dois
+                &lt;br&gt; tres pedaços
+
+            </code>
+        </pre>
+        <br>
+        <p style="background-color: rgb(250, 87, 87);width:400px; margin: auto; text-align:center">testado fator br<br> como quebra a linha em<br> um <br>dois
+            <br> tres pedaços
+        </p>
+    </div>
+    <div>
+        <h2>HTML e CSS trabalhando juntos</h2>
+        <p>
+            Para melhor formatação usamos junto das tags o css, para por exemplo dar melhor margem ao parágrafo ou cor aos títulos e subtítulos, centralizar o corpo do parágrafo ou simplesmente alinhar todo o texto.
+            Alguns exemplos abaixo.
+        </p>
+        <pre>
+            <code>
+                ------------------
+                Aqui o corpo de toda a pagina
+                body {
+                    text-align: center;
+                    margin: 8px;
+                }
+                ------------------
+                Aqui oque eu quero para quando eu usar a tag p 
+                p {
+                    margin: 8px;
+                    text-align: justify;
+                    text-indent: 20pt;
+                }
+                ------------------
+                aqui atributos para os titulos e subtitulos
+                h1 {
+                    color: red;
+                }
+                
+                h2 {
+                    color: blue
+                }
+                ------------------
+            </code>
+        </pre>
+    </div>
+    <div>
+        <div>
+            <h1>Tags <em>strong, em ou i</em></h1>
+            <p>As Tags <strong>B</strong>(negrito) foi subistituida pela tag <strong>STRONG</strong>, e a tag <strong>I</strong> (itálico) substituidas pela tag <strong>EM</strong>  (ênfase)</p>
+            <p>A tag <strong>&lt;strong&gt; &lt;/strong&gt; da importância(negrito) a palavra, e deixando em negrito</strong></p>
+            <p> A tag <i>&lt;i&gt; &lt;/i&gt; deixa a palavra em itálico </i></p>
+            <p>A tag <em>&lt;em&gt; deixa em itálico e da importância a palavra</em></p>
+        </div>
+    </div>
+    
+</body>
+</html>

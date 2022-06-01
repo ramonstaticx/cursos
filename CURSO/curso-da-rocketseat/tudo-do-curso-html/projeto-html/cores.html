@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-do-html.css">
+    <title>Cores</title>
+    <style>
+        pre {
+            background-color: transparent;
+            ;
+        }
+
+        code {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--formatar td-->
+    <h1>Cores</h1>
+    <p>Cores o ideal é usar paleta de no minimo de 3 cores e no maximo de 5 cores mais que isso fica desagradavel.</p>
+    <h2>Cores no fundo( backgrond-color)</h2>
+    <p>a tag backgrond-color pode ser usada para por cores inteiras no fundo, ou degrade vamos aos ex:</p>
+    <div style="background-color:rgb(0, 217, 255);">
+        <p>Aqui usei cor macissa e logo abaixo o codigo.</p>
+        <p>
+        <pre>
+                <code>
+                    &lt;div style="background-color:rgb(0, 217, 255);">
+                        ou no CSS
+                        div {
+                            backgrond-color:rgb(0, 217, 255)
+                        } 
+            </code>
+        </pre>
+        </p>
+    </div>
+    <p>agora com fundo degrade da direira para esquerda, depois de baixo para cima <strong>(observe que vai dar um erro
+            e para isso tenho de corregir com a tag universal *)</strong></p>
+    <p>Vamos substituir a tag <strong>&quot;color&quot;</strong> por <strong>&quot;imagen&quot;</strong>, e para
+        posicionar vamos usar o <strong>&quot;to&quot;</strong>.</p>
+    <p>depois da tag <strong>&quot;to&quot;</strong> podemos usar right, left, top, bottom ou em graus para posicionar
+        exemplo <strong>45deg</strong>, <strong>&quot;deg&quot;</strong> significa graus</p>
+    <p>Outra coisa importante que pode ser mudada é o <strong>linear-gradient por radial-gradient, e acrecentar logo em
+            seguida ao inves do &quot; To&quot; usar &quot;circle&quot;</strong>.</p>
+    <p>após a cor posso or porcentagem para q tenha uma porcentagen a mais daquela cor na pagina.</p>
+    <div style="background-image: linear-gradient(to right,white, blue)">
+        <p>
+            direita para esquerda
+        </p>
+        <p>
+        <pre>
+                <code>
+                    &lt;div style="background-image: linear-gradient(to right,white, blue)">&lt;/div>
+
+                    no CSS
+
+                    body {
+                        background-image:linear-gradient(to right, white,blue);
+                    }
+                </code>
+            </pre>
+        </p>
+    </div>
+
+    <p>
+        agora de baixo para cima e observe o erro citado la em cima e como corrigir no CSS
+    </p>
+    <div style="background-image: linear-gradient(to bottom, white,blue) ;">
+        <p>
+            de baixo para cima
+        </p>
+        <p>
+        <pre>
+                   <code>
+                    &lt;div style="background-image: linear-gradient(to bottom, white,blue) ;">
+
+                    no CSS
+
+                    *{
+                        height: 100% 
+                    }
+                        /*tivemmos de por esse valor por causa q o degrade fica picado, assim fica um todo */
+                    
+                    body {
+                        background-image: linear-gradient(to bottom,white,blue );
+                    }
+                        
+                    
+                   </code>
+               </pre>
+        </p>
+
+    </div>
+</body>
+
+</html>

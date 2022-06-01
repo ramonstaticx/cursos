@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capa do projeto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>
+                <em>
+                    AULA DE CSS
+                </em>
+            </h1>
+            <h2>
+                O que é CSS
+            </h2>
+        </hgroup>
+        <p>CSS é uma maneira de estilizar a pagina do html, porque no momento do curso estou usando HTML e vou passar
+            estilizar com o css</p>
+    </header>
+    <h2>Regrinhas a seguir </h2>
+    <div>
+        <ul>
+            <li>Sempre nomear os arquivos com final .css ou .html ex: ( index.html ou style.css) mesmo podendo usar o
+                css dentro do html</li>
+            <ul>
+                <li type="disc">obs: no vscode o preview só se ve o html e não se css se estiver em link.</li-1>
+            </ul>
+            <li>CSS sem haverá comando usando { }
+                ex: h1{ color: blue
+                }</li>
+        </ul>
+
+    </div>
+    <h2>
+        <strong>
+            <u> DICAS</u>
+        </strong>
+    </h2>
+    <div>
+
+        <ul>
+            <li> Para estilizar melhor as fontes pegar, usar fontes disponíveis no site
+                usando o site <a href="https://fonts.google.com/" target="_blank"><abbr title="fonts.google.com">fontes
+                        do google</abbr></a>
+            </li>
+            <li>Porem é indicado a por a fonte direto ao inves de por o link, porque ai o site demora mais para
+                carregar.
+            </li>
+            <li> Muito cuidado com a formatação do CSS, ex: &lt;a href=&quot;https:google.com&quot;&gt;, e com isso
+                acabar juntando o &quot;a com href &quot;, e causar um erro de formatação.
+            </li>
+            <li> <u>DEVTOOL</u>, é tudo dentro do <u>F12</u> no browser
+            </li>
+            <li>Propriedade tem valor.
+                <br>
+                Property: Value
+                <br>
+                <u>Value</u> pode ser chamado de <u>Data type</u>
+            </li>
+            <ul>
+
+    </div>
+
+    <div id="ol">
+        <h2>VALORES DENTRO DO <u>CSS</u></h2>
+        <ol type="1">
+            <li>
+                1 primeiro
+                <pre>
+            <code>
+                        
+                 &lt;inlin> 
+                ex:   &lt;h1 style”color: blue”>Titulo&lt;/h1>
+                regra do próprio HTM
+                </code>
+            </pre>
+            </li>
+            <li>2 segundo
+                <pre>
+                    <code>
+                        'Tag style'
+                        Ex: h1{ color:blue
+	                        }
+                        desta forma todo o H! da página vai ser blue
+                        obs: foi usado o CSS dentro do arquivo html
+
+                    </code>
+                </pre>
+            </li>
+            <li>3 terceiro
+                <pre>
+                    <code>
+                        'Tag Link'
+                        EX: &lt;link rel="stylesheet" href="style.css">
+
+                        É puxar o css de outro arquivo para estilizar a página HTML
+
+                    </code>
+                </pre>
+            </li>
+        </ol>
+    </div>
+    <h2><u>VALORES</u> (ESPECIFIDADES) </h2>
+    <p>0. Universal seletor(*), combination e negation pseudo-class(NOTE)</p>
+    <p>1.Element type selector e pseudo-elements(::before, ::after)</p>
+    <p>10.Classes e atribute seletores ([type=”radio”])</p>
+    <p>100. Id selector</p>
+    <p>1000. Inline</p>
+
+
+
+    <h2>VEDOR PREFIXES(PREFIXOS).</h2>
+    <p>Permite que browser adicione <U>&apos;features&apos;</U> (novidades) a fim de colocar em uso alguma novidade que
+        vemos no CSS.
+    </p>
+    <br>Ex:
+    <div>
+        <p>-webkit-background: text; /*chorme, safari, ios e android */</p>
+        <p>-moz-background: text; /* momzilla(firefox) */</p>
+        <p>-ms-background: text; /*internet Explorer*/</p>
+        <p>-o-background: text; /*opera*/</p>
+
+        <p> Consultas no seguites sites:
+        </p>
+
+        <a href="http://ireade.github.io/which-vendor-prefix/">http://ireade.github.io/which-vendor-prefix/</a>
+        <br>
+        <a href="http://caniuse.com">http://caniuse.com</a>
+    </div>+
+    <span>
+        <h2>AT-RULES</h2>
+        <p>Comportamento do CSS que significa @</p>
+        <br>
+        <p>-@import /* inclui um CSS externo*/</p>
+        <p>-@media /*regra condicionadas para dispositivos*/
+        </p>
+        <p>-@front-face /* fontes externas*/
+        </p>
+        <p>- @frey-frame /* animações*/
+        </p>
+    </span>
+    <div>
+        <h2>FUNÇÕES</h2>
+
+        <p>Nome seguido de parênteses, argumento dentro do parênteses
+        </p>
+        <p> ex:
+        </p>
+        <table class="tabela funcoes">
+            <caption><em>Funções</em></caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>função</th>
+                    <th>argumento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>@import</th>
+                    <th>url</th>
+                    <th>("https//google.com")</th>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="tabela">
+            <caption> Plugin</caption>
+            <thead>
+                <tr>
+                    <th>plugin</th>
+                    <th>função</th>
+                    <th>argumento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>color:</th>
+                    <th>rgb</th>
+                    <th>(255,0,100)</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>TIPOS NUMÉRICOS</h2>
+        <TAble>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>&lt;Integer></th>
+                    <th>numeros inteiros como -10 ou 223</th>
+                </tr>
+                <tr>
+                    <th>&lt;Number></th>
+                    <th>conhecido como número Real, tendo numero decimal como -8, 4,640.234</th>
+                </tr>
+            </tbody>
+        </Table>
+    </div>
+    <div>
+        <h2>UNIDADES COMUNS</h2>
+        <table>
+
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
