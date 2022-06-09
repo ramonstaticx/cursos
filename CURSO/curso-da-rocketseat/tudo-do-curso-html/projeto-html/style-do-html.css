@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
-body {
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body-pg {
+    height: 100vh;
+    /*usando em pg que ainda não rolam, para não dar erro no background*/
+}
+
+html {
+
+    background-image: linear-gradient(to bottom, rgb(204, 243, 163), rgb(104, 123, 83));
+    background-repeat: no-repeat;
     text-align: center;
+}
+
+body {
     margin: 8px;
-    background-image: linear-gradient(to bottom, rgb(204, 243, 163), rgba(0, 0, 255, 0.38));
+
 }
 
 p {
@@ -22,32 +39,54 @@ h2 {
 
 li {
     list-style-position: inside;
-    
+   
 }
-#margen-left{
+ul {
     text-align: left;
+    margin-left: 8px;
+    text-indent: 8px;
 }
+
+#margen-left {
+    text-align: lefth;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 pre {
+
+    text-align: justify;
     background-color: brown;
     border-radius: 10px;
-    box-shadow: 6px 6px 15px black;
-    text-align: justify;
+    box-shadow: 6px 4px 8px black;
     width: 600px;
     padding: 10px;
     margin: auto;
     color: aqua;
+    white-space: pre-wrap;
 
-    
 }
-/*code {
-    color: aqua;
-}*/
-/*
-table { tenho que saber centralizar tabela pelo css
-;
-}
-*/
+
+
 table {
-    margin: auto;
 
+    margin: auto ;
+
+}
+
+#tr {
+    font-size: small;
+    padding: 8px
+        /*usado na pagina ancora para deixar a tabela menor*/
+}
+
+#th {
+    padding: 8px;
+
+}
+#thsmall{
+    font-size: small;
 }
