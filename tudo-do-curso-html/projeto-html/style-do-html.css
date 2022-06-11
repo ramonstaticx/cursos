@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body-pg {
+    height: 100vh;
+    /*usando em pg que ainda não rolam, para não dar erro no background*/
+}
+
+html {
+
+    background-image: linear-gradient(to bottom, rgb(204, 243, 163), rgb(104, 123, 83));
+    background-repeat: no-repeat;
+   
+}
+
+body {
+    margin: 8px;
+   
+
+}
+
+p {
+    margin: 8px;
+    text-align: justify;
+    text-indent: 20pt;
+}
+
+#pcenter {
+    text-align: center;
+
+}
+
+h1 {
+    color: rgb(248, 5, 5);
+}
+
+h2 {
+    color: blue
+}
+
+li {
+    list-style-position: inside;
+
+}
+
+ul {
+    text-align: left;
+    margin-left: 8px;
+    text-indent: 8px;
+}
+
+#margen-left {
+    text-align: lefth;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+pre {
+
+    text-align: justify;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 6px 4px 8px black;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    color: aqua;
+    white-space: pre-wrap;
+
+}
+
+
+table {
+
+    margin: auto;
+
+}
+
+#tr {
+    font-size: small;
+    padding: 8px
+        /*usado na pagina ancora para deixar a tabela menor*/
+}
+
+#th {
+    padding: 8px;
+
+}
+
+#thsmall {
+    font-size: small;
+}

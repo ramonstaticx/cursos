@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(3, 75, 3);
+    margin: 8px;
+
+}
+
+body p {
+    margin: 8px;
+    text-align: justify;
+    text-indent: 20pt;
+}
+
+h1 {
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    color: rgb(232, 14, 14);
+
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+
+}
+
+/*
+li  { list-style-type: disc;
+}
+
+*/
+
+#ol {
+
+    text-align: center;
+    border: 1px solid red;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-position: inside;
+}
+
+table.tabela {
+     border: 1px solid red;
+     margin:auto; 
+     }

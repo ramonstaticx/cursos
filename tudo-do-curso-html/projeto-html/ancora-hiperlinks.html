@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancora-hiperlinks</title>
+    <link rel="stylesheet" href="./style-do-html.css">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Tudo Sobre Âncora e hiperlinks</h1>
+    <h2>Aprendendo sobre hiperlinks</h2>
+
+    <p>Aprendendo um pouco sobre a tag &lt; a &gt; que significa <u>&apos;âncora&apos;</u> e usando ela junto com href
+        pode chamar uma url ou até mesmo um arquivo no diretório, um bom ex:
+        <br>
+    <pre>
+            <code>
+                &lt;a href=&quot;http://google.com&quot; target=&quot;_blank rel= &quot;external&quot;&quot;&gt; Google&lt;/a&gt;
+            </code>
+        </pre>
+
+    </p>
+    <p>E juntando com <strong>target=&quot;_blank&quot; </strong> quando clicar no link irar abrir uma nova guia, ao
+        invés de sair da página atual e ir para a página direcionada, e <strong>rel=&quot;external&quot;</strong> para
+        se referir que é uma url externa.</p>
+    <p>Porém o <q>parametro <strong>target=<q>self</q></strong></q> abre na mesma aba o link.</p>
+    <p><q>Obs: Nâo é legal por o <strong>target=&quot;_blank&quot; </strong>para não poluir muito o navegador e ter
+            várias páginas abertas do mesmo site</q>
+    </p>
+    <nav>
+        <a href="http://google.com" target="_blank" rel="external"> Aqui será redirecionado ao Google</a>
+        <p>Obseve que se usar target blank ele me direciona a pagina sem sair da outra q eu estava </p>
+    </nav>
+    <p>Dica: para dizer que o caminho esta vasio usamos #
+    <pre>
+            <code>
+                &lt;a href="#">texto&lt;/a>
+            </code>
+        </pre>
+    </p>
+
+    </div>
+    <nav>
+        <H2>&lt;A&gt; de Âncora (link e id da página)</H2>
+        <p>Mostrando ancora para um site,e-mail e telefone</p>
+        <p>Sempre que formos iniciar a tag &lt;a&gt;temos de no lugar de <q>div</q> usar <q>nav</q>, quando for
+            relacionado a navegar pelo paragrafo, lista,...</p>
+
+        <nav>
+            <ul>
+                <li><a href="http://google.com.br"> google</a></li>
+                <li><a href="mailto:apvale2010@hotmail.com">e-mail do Ramon</a></li>
+                <li><a href="tel:+5512996114946">telefone do Ramon</a></li>
+            </ul>
+        </nav>
+
+    </nav>
+    <nav>
+        <p>Agora vou mostra exemplo de como chamar um subi titulo da pagina</p>
+        <p>Pode se dizer que teremos de usar a tag <u>id</u> para darmos uma identificação para cada um.
+            O <u>id</u> tem que vir depois de uma tag um bom exemplo é:
+        </p>
+        <div>
+            <pre>
+                <code>
+                    &lt;h2 id=&quot;qualquer nome &quot;&gt; texto&lt;/h2&gt;
+                </code>
+            </pre>
+        </div>
+        <p>
+            Logo em seguida para chamar ela como está as Lorens (sobre mim, história e trabalho), teremos de usar o
+            seguinte Código:
+        </p>
+
+        <div>
+            <pre>
+                <code>
+                    &lt;a href=&quot;#o nome que foi do&quot;&gt;texto&lt;/a&gt;
+                </code>
+            </pre>
+        </div>
+        <p>Sendo mais especifico em cada Código</p>
+
+        <div>
+            <ul>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#history">Hitória</a> </li>
+                <li><a href="#works">Trabalho</a> </li>
+            </ul>
+        </div>
+        <div>
+            <pre>
+                <code>
+                    &lt;nav>
+                     &lt;ul>
+                            &lt;li>&lt;a href="#about">Sobre mim&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="#history">Hitória&lt;/a> &lt;/li>
+                            &lt;li>&lt;a href="#works">Trabalho&lt;/a> &lt;/li>
+                        &lt;/ul>
+                &lt;/nav>
+                </code>
+            </pre>
+        </div>
+        <p>Logo em seguida as Lorens com seus sub titulos, com os id, ex de uma só o <q>Sobre mim</q></p>
+        <div>
+            <pre>
+                <code>
+                    &lt;h2 id="about" style="color: black;">Sobre mim&lt;/h2>
+                </code>
+            </pre>
+        </div>
+
+        <div>
+            <h2 id="about" style="color: black;">Sobre mim</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, maiores provident illum rem ullam sunt
+                natus
+                sed
+                accusantium distinctio perspiciatis ex. Neque porro optio harum doloribus nobis qui numquam illum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor recusandae adipisci tenetur quam
+                ea
+                minima
+                veniam dolore iste. Deserunt eos iste saepe libero dicta et esse nostrum perspiciatis assumenda.
+            </p>
+            <h3 id="history">História</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem natus officia possimus harum sit placeat
+                vero
+                reiciendis eius at, ut provident temporibus voluptas, nulla delectus. Doloribus necessitatibus dolores
+                cumque
+                repellat!
+            </p>
+            <h3 id="works">Trabalho</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis libero hic rem eum repellat, voluptas,
+                omnis
+                nam
+                iste, expedita ratione quos non quasi laudantium. Maiores veritatis odio repudiandae blanditiis
+                asperiores.
+            </p>
+        </div>
+    </nav>
+    <div>
+        <h2>Chamando outros Arquivos(paginas do site)</h2>
+        <p>Para puxar outra pagina ou outro arquivo uso ancora(a)com o href</p>
+        <div>
+            <pre>
+                <code>
+                    &lt;a href="../Aprendendo css/curso css.html">para chamar o arquivo curso css&lt;/a>
+                </code>
+            </pre>
+        </div>
+        <nav>
+            <a href="#">Chamando o Arquivo do Curso Css</a>
+        </nav>
+        <h2>Download</h2>
+        <p>Para fazer download é bem parecido com todo o résto</p>
+        <div>
+            <p>Aqui estamos fazendo o download da imagem de um carro.
+                <a href="../imagens/images.jpg
+                " download="carros.jpg" type="image/jpg">clicar aqui para fazer o Download</a>
+            </p>
+            <pre>
+                <code>
+                     &lt;a href="../imagens/images.jpg
+                        " download="carros.jpg" type="image/jpg">clicar aqui&lt;/a>
+                </code>
+            </pre>
+        </div>
+        <br>
+        <table>
+            <col style="background-color: aqua;">
+            <col style="background-color: brown">
+            <col style="background-color: aqua;">
+            <col style="background-color: brown">
+            <caption style="background-color: rgb(230, 0, 255);">Dentro do codigo temos</caption>
+            <tr>
+                <th>a</th>
+                <th>href</th>
+                <th>download</th>
+                <th>type</th>
+            </tr>
+            <tr id="tr">
+                <th id="th">âncora</th>
+                <th id="th">O arquivo para download</th>
+                <th id="th">O nome que vai <br> aparecer na hora de baixar</th>
+                <th id="th">Tipo do arquivo <br><small>pequisar no site iana</small></th>
+            </tr>
+           </table>
+
+
+</body>
+
+</html>

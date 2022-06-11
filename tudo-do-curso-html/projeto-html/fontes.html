@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <link rel="stylesheet" href="./style-do-html.css">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Fontes</h1>
+    <h2>Tipografia</h2>
+    <p>Tipografia das fontes é o sentimento que as fontes passam.</p>
+    <div>
+        <table>
+            <tr>
+
+                <th>FONTES --&gt;</th>
+                <th>serifadas=</th>
+                <th id="thsmall">contem serifo (um pésinho)</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>sans-serif=</th>
+                <th id="thsmall">sem serifo</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>mono espaçada=</th>
+                <th id="thsmall"> todas as letras tem a mesma quantia de espaço</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>handwriting=</th>
+                <th id="thsmall">imita a escritra real</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>display</th>
+                <th id="thsmall">fonte que não contem regras</th>
+            </tr>
+        </table>
+    </div>
+    <p>Dica: Usar <strong>sans-serif</strong> em sites com textos longos.</p>
+    <div>
+        <pre>
+            <code>
+                body{
+                    font-famly:arial
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>body{</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr">
+                    <th></th>
+                    <th>font-family:</th>
+                    <th>arial;</th>
+                    </tr>
+                    <tr>
+                        <th>}</th>
+                    </tr>
+
+                    <tr id="tr">
+                        <th id="th">corpo do html</th>
+                        <th id="th">modelo da fonte</th>
+                        <th id="th">qual fonte vai ser
+                        <th>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Obsserve a propriedade <strong>font-family:</strong> que signifaca familia da fonte ou seja vai ser colocado o
+        modelo da fonte e mais umas 3 da familia para que se o computador não tiver a fonte vai ler a seguinte, ex:
+        <strong>font-family: Arial, Helvetica, sans-serif;</strong>
+    </p>
+    <p><strong>Dica:</strong> Para usar combinaçoes corretas de fontes vamos usar os seguites sites, pesquisando no
+        google &quot;web safe font combinations&quot;</p>
+    <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">w3schools.com</a></p>
+    <h2>Tamanho da Fonte</h2>
+    <p><strong>font-size=</strong>-&gt;Tamanho da fonte</p>
+    <h3>Medidas Relativas</h3>
+    <p>Medidas relativadas é do seguinte valor,</p>
+    <div>
+        <table>
+            <tr>
+                <th>em</th>
+                <th>--&gt;</th>
+                <th id="thsmall">altura &quot;m&quot;</th>
+                <th>--&gt;</th>
+                <th id="thsmall">altura da letra maiuscula</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th id="thsmall">altura &quot;x&quot;</th>
+                <th>--&gt;</th>
+                <th id="thsmall">altura da fonte</th>
+            </tr>
+        </table>
+    </div>
+    <p style="text-decoration: underline;">OBS: A medida de <strong>1em = 16px</strong></p>
+    <h3>Medidas Absolutas</h3>
+
+    <div>
+        <table>
+            <tr>
+                <th>cm=</th>
+                <th id="thsmall">centimetro</th>
+            </tr>
+            <tr>
+                <th>mm=</th>
+                <th id="thsmall">milimetro</th>
+            </tr>
+            <tr>
+                <th>in=</th>
+                <th id="thsmall">polegadas</th>
+            </tr>
+            <tr>
+                <th>pt=</th>
+                <th id="thsmall">pontos</th>
+            </tr>
+            <tr>
+                <th>pc=</th>
+                <th id="thsmall">paica</th>
+            </tr>
+            <tr>
+                <th>px=</th>
+                <th id="thsmall">pixel</th>
+            </tr>
+        </table>
+    </div>
+    <p>Os mais usados em:
+    <table>
+        <tr>
+            <th>Tela:</th>
+            <th id="thsmall">em, px, %</th>
+        </tr>
+        <tr>
+            <th>impressora=</th>
+            <th id="thsmall">em, cm, mm, in, pt, pc</th>
+        </tr>
+    </table>
+    </p>
+    <h3>Medidas mais Usadas</h3>
+    <p>As medidas mais usadas são dadas em:</p>
+    <div>
+        <p id="pcenter"> REm= body (root que é configurado o pai)</p>
+        <p id="pcenter">vw= largura</p>
+        <p id="pcenter">hh= altura da tela</p>
+        <p id="pcenter">%= Porcentagem</p>
+    </div>
+    <h2>Peso da fonte</h2>
+    <p>Detalhe <strong>weght</strong>significa <q>peso</q>, <strong>width</strong> que signifaca <q>largura</q> e
+        <strong>height</strong> significa <q>altura</q>
+    </p>
+    <div>
+        <table>
+            <tr>
+                <th>Lighter</th>
+                <th>normal</th>
+                <th>bold</th>
+                <th>bolder</th>
+            </tr>
+            <tr id="tr">
+                <th id="th">fonte fina(magra)</th>
+                <th id="th">fonte normal</th>
+                <th id="th">negrito</th>
+                <th id="th">super negrito</th>
+            </tr>
+            <tr>
+                <th>100-300</th>
+                <th>400-600</th>
+                <th>700-800</th>
+                <th>900-...</th>
+            </tr>
+        </table>
+    </div>
+    <h2>Estilos de fontes</h2>
+    <p>font-style: italico ---&gt; Estilo da fonte</p>
+    <p>no css o codigo ficaria bem assim</p>
+    <div>
+        <pre>
+            <code>
+                h1 {
+                    font-family: 'wok sans', 'sans-serif', ;
+                    font-weight: bolder;
+                    font-size: 1.1em;
+                    font-style: italic;
+                     }
+            </code>
+        </pre>
+    </div>
+    <p>Para simplificar vamos usar um <strong><em>shorthand font</em></strong>, suas seguintes propriedades é, Obsserve que tem uma ordem bem especifica a ser seguida.</p>
+    <p><em>font-style, font-weight, font-size, font-family.</em></p>
+    <p>Então ficaria assim.
+    <strong><em>font: italic bolder 1.1em 'wok sans', 'sans-serif''</em></strong></p>
+  <h2>importando Fontes</h2>
+  <p>Usando o site <a href="https://fonts.google.com/" target="_blank" rel="fontes do google">Google fontes</a> ou o do site <a href="https://www.dafont.com/pt/" target="_blank" rel="fontes">DaFonte.com</a></p>
+  <p>Para importar vamos usar o css</p>
+  <p>Do google vamos usar @import, após selecionar a font, e então vamos copiar td que estiver dentro do @import vamos colar tudo dentro do css, logo em Seguida vamos pegar a familia dela logo abaixo em <q>CSS rules to specify families</q>, para usar essa fonte onde quisermos
+ </p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
