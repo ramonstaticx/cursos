@@ -79,6 +79,11 @@ ul {
     margin-left: 8px;
     text-indent: 8px;
 }
+ol {
+    text-align: left;
+    margin-left: 8px;
+    text-indent: 8px;
+}
 
 #margen-left {
     text-align: lefth;
