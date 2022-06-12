@@ -108,15 +108,15 @@ table {
 
 }
 
+
+
+#th {
+    padding: 8px;
+}
 #tr {
     font-size: small;
     padding: 8px
         /*usado na pagina ancora para deixar a tabela menor*/
-}
-
-#th {
-    padding: 8px;
-
 }
 
 #thsmall {

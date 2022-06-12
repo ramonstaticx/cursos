@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-do-html.css">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
     <title>Cores</title>
     <style>
         pre {
@@ -27,8 +28,8 @@
     <p>a tag background-color pode ser usada para por cores inteiras no fundo, ou degradê vamos aos ex:</p>
     <div style="background-color:rgb(0, 217, 255)" ;>
         <p>Aqui usei cor maciça e logo abaixo o código.</p>
-        <div class="container">
-            <pre>
+
+        <pre style="background-color: brown;">
             <code>
                     &lt;div style="background-color:rgb(0, 217, 255);">
                         ou no CSS
@@ -37,22 +38,28 @@
                         }
             </code>
         </pre>
-        </div>
+
     </div>
-    <p>agora com fundo degradê da direita para esquerda, depois de baixo para cima <strong>(observe que vai dar um erro
+    <p>Agora com fundo degradê da direita para esquerda, depois de baixo para cima <strong>(observe que vai dar um erro
             e para isso tenho de corrigir com a tag universal *)</strong></p>
     <p>Vamos substituir a tag <strong>&quot;color&quot;</strong> por <strong>&quot;imagen&quot;</strong>, e para
         posicionar vamos usar o <strong>&quot;to&quot;</strong>.</p>
     <p>depois da tag <strong>&quot;to&quot;</strong> podemos usar right, left, top, bottom ou em graus para posicionar
-        exemplo <strong>45deg</strong>, <strong>&quot;deg&quot;</strong> significa graus</p>
+        exemplo <strong>45deg</strong>, <strong>&quot;deg&quot;</strong> significa graus.</p>
+    <ur>
+        <li>to right= degrade para direita</li>
+        <li>to left= degrade para esquerda.</li>
+        <li>to top= degrade para cima</li>
+        <li> to botton= degrade para baixo</li>
+    </ur>
     <p>Outra coisa importante que pode ser mudada é o <strong>linear-gradient por radial-gradient, e acrescentar logo em
             seguida ao invés do &quot; To&quot; usar &quot;circle&quot;</strong>.</p>
-    <p>após a cor posso por porcentagem para que tenha uma porcentagem a mais daquela cor na página.</p>
+    <p>Após a cor posso por porcentagem para que tenha uma porcentagem a mais daquela cor na página.</p>
     <div style="background-image: linear-gradient(to right,white, blue)">
         <p>
             Direita para esquerda
         </p>
-        <div class="container">
+        <div>
             <pre>
             <code>
             &lt;div style="background-image:linear-gradient(to right,white, blue)">&lt;/div>
@@ -72,13 +79,11 @@
     </p>
     <div style="background-image: linear-gradient(to bottom, white,blue) ;">
         <p>
-            de baixo para cima
+            De baixo para cima
         </p>
         <p>
         <pre>
             <code>
-         
-                
                      &lt;div style="background-image:linear-gradient(to bottom, white,blue) ;">
               
                      no CSS
@@ -92,13 +97,108 @@
                      body {
              background-image: linear-gradient(to bottom,white,blue );
                      }
-                       
                     
         </code>
         </pre>
         </p>
-
     </div>
+    <h2>Hexa Decimal</h2>
+    <p>Numeros em hexa decimal sempre começarão com <strong>#</strong>quando se refere a cor.</p>
+    <p>E a sequencia de numeros é:</p>
+    <p>1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f,</p>
+
+    <h2>Cores Primarias, Secundarias e Tercearias</h2>
+    <TAble>
+        <col style="background-color: rgb(167, 167, 1);">
+        <col style="background-color: red;">
+        <col style="background-color: blue;">
+        <tr>
+            <th id="th">Primaria</th>
+            <th>Secundaria</th>
+            <th>Tercearia( tons pasteis)
+        </tr>
+        </tr>
+        <tr id="tr">
+            <th>amarelo</th>
+            <th>laranja</th>
+            <th>amarelo-esverdiado/ amarelo-alaranjado</th>
+        </tr>
+        <tr id="tr">
+            <th>vemelho</th>
+            <th>violeta</th>
+            <th>vermlho-alaranjado/ vermelho-arroxiado</th>
+        </tr>
+        <tr id="tr">
+            <th>azul</th>
+            <th>verde</th>
+            <th>azul-arroxiado/ azul-esverdiadoa</th>
+        </tr>
+    </TAble>
+
+    <!--expor melhor o siguinificado daqui para baixo obs estudar -->
+    <h2>Cores análogas</h2>
+    <p>Cores analogas são cores que não tem nada haver uma com as outras</p>
+    <p>Diferente das cores complementares, que estão do lado
+        extremo oposto no círculo cromático, as cores análogas são
+        aquelas que são imediatamente vizinhas entre si.</p>
+    <p>
+        Por serem cores consecutivas, as cores análogas possuem um
+        baixo contraste entre elas, mas criam uma bela harmonia
+        quando combinadas em um mesmo design
+    </p>
+    <h2>Cores análogas relacionadas </h2>
+    <p>
+        Nesse tipo de harmonia, escolhemos duas cores análogas
+        (consecutivas) e depois pulamos uma terceira cor (em qualquer
+        direção) e escolhemos a quarta.
+    </p>
+    <p>
+        Com essa técnica, conseguimos um resultado parecido com o
+        das cores análogas simples, mas com um pouco mais de
+        contraste sem ter que escolher uma cor complementar
+    </p>
+    <h2>Cores análogas mais uma complementar </h2>
+    <p>Dá pra notar que essa aqui é uma combinação dos dois tipos
+        anteriores, não é?</p>
+    <p>Essa técnica quebra um pouco o ritmo semelhante das cores
+        análogas, adicionando uma cor que cria um grande contraste
+        com as três análogas</p>
+    <h2>Cores Complementares</h2>
+    <p>São aquelas que apresentam o maior contraste entre si. Elas
+        estão localizadas do lado imediatamente oposto do círculo
+        cromático.</p>
+    <p>
+        Se pegarmos qualquer cor primária, a sua cor complementar é
+        sempre uma cor secundária. De forma similar, qualquer cor
+        terciária tem uma outra cor terciária como complementar.
+    </p>
+    <p>Quando juntamos duas cores complementares, sempre
+        obtemos o cinza.</p>
+    <h2>Cores intercaladas </h2>
+    <p>
+        Um tipo menos usado de harmonia, já que às vezes não
+        funciona tão bem assim. Vamos escolher a primeira cor e
+        depois mais duas com intervalo constante entre elas.
+    </p>
+    <p>
+        Na imagem ao lado, criei um exemplo onde o intervalo é
+        constante entre as cores selecionados.
+    </p>
+    <h2>Monocormatica</h2>
+    <p>Uma harmonia bem diferente das anteriores, que usa apenas
+        uma cor e varia apenas a sua saturação e o seu brilho. Essa
+        combinação geralmente gera pouquíssimo contraste entre as
+        cores escolhidas, mas acaba gerando um resultado visual bem
+        agradável aos olhos, conhecido como “degradê”.</p>
+
+    <h3>DICAS</h3>
+    <p>sites para cores</p>
+    <ul>
+        <li><a href="https://color.adobe.com/pt/" target="_blank" rel="externo">color adobe</a></li>
+        <li><A href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="externo">paletton.com</A> (monta um site como ex)</li>
+        <li><a href="http://www.colors.com/" target="_blank">colors.com</a> (ótimo site para quem ta sem ideias)</li>
+    </ul>
+    <p>Tambem temos extenção para o chrome (ótima extenção) para saber a cor do site.--><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank" rel="externo">CORLORZILLA</a></p>
 </body>
 
 </html>
