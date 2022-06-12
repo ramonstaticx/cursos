@@ -89,9 +89,6 @@ ol {
     text-align: lefth;
 }
 
-
-
-
 pre {
 
     text-align: justify;
@@ -106,15 +103,11 @@ pre {
 
 }
 
-
 table {
 
     margin: auto;
 
 }
-
-
-
 #th {
     padding: 8px;
 }
@@ -126,4 +119,9 @@ table {
 
 #thsmall {
     font-size: small;
+}
+
+div.img-center {
+                 text-align: center;
+    
 }

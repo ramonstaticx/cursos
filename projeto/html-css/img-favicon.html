@@ -28,7 +28,11 @@
             </code>
         </pre>
     </p>
-    <img src="../imagens/images.jpg" width="10%" alt="imagen do maquin">
+    <div class="img-center">
+        <picture>
+            <img src="../imagens/images.jpg" width="10%" alt="imagen do maquin">
+        </picture>
+    </div>
 
     <p>Observe que usei a tag <strong>src</strong> para chamar a <strong>imagem</strong> (de um diretório)mas também
         posso depois de <strong>src</strong> por a <strong>url</strong>
@@ -36,7 +40,11 @@
         se eu
         usar width 20 ele dá um valor, e se eu usar width 20% é outro valor. veja abaixo.
     </p>
-    <img src="../imagens/images.jpg" width="200" alt="imagen do maquin">
+    <div class="img-center">
+        <picture>
+            <img src="../imagens/images.jpg" width="200" alt="imagen do maquin">
+        </picture>
+    </div>
     <p>Aqui foi um exemplo dos valores da width</p>
     <pre>
         <code>
@@ -137,28 +145,36 @@
                 <th>&quot;favicon.ico&quot;</th>
                 <th>type=</th>
                 <th>&quot;image/x-icon&quot;></th>
-                <tr id="tr">
-                    <th id="th">é tag de importar</th>
-                    <th id="th">referencia</th>
-                    <th id="th">esta dizendo que é um iconi da aba</th>
-                    <th id="th">é para chamar uma url</th>
-                    <th id="th">o local do arquivo</th>
-                    <th id="th">o tipo de arquivo</th>
-                    <th id="th"> diz que é um arquivo de iconi</th>
-                </tr>
+            <tr id="tr">
+                <th id="th">é tag de importar</th>
+                <th id="th">referencia</th>
+                <th id="th">esta dizendo que é um iconi da aba</th>
+                <th id="th">é para chamar uma url</th>
+                <th id="th">o local do arquivo</th>
+                <th id="th">o tipo de arquivo</th>
+                <th id="th"> diz que é um arquivo de iconi</th>
+            </tr>
             </tr>
         </table>
-        <p>Este código é usado,  bem na parte <strong>head</strong>(dentro do head) do html onde fica todos os links e metas.</p>
+        <p>Este código é usado, bem na parte <strong>head</strong>(dentro do head) do html onde fica todos os links e
+            metas.</p>
 
         <h2>Centralizando a Imagem</h2>
         <p>Para centralizar a imagem usamos o CSS declarando propriedade <strong>margin</strong> com o valor
-            <strong>auto</strong></p>
+            <strong>auto</strong>
+        </p>
         <p>
         <pre>
                 <code>
                     div-><sup>(que contem a imagen)</sup>
                     div {
                         margin: auto;
+                    }
+
+                    <mark>/* ou usar o tradiciona text-aling */</mark>
+
+                    div {
+                        text-aling: center;
                     }
                 </code>
             </pre>
