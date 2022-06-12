@@ -12,6 +12,19 @@
 
 <body>
     <h1>Fontes</h1>
+    <h2>Propriedades básicas das Fontes</h2>
+    <p>Agora alguns exemplos de propriedades de font</p>
+    <p id="pcenter">color:...........cor da fonte;</p>
+    <p id="pcenter">font-family:.....família (tipo) de fontes;</p>
+    <p id="pcenter">font-size:.......tamanho da fonte;</p>
+    <p id="pcenter">font-style:......estilo da fonte;</p>
+    <p id="pcenter">font-variant:....fontes maiúsculas de menor altura;</p>
+    <p id="pcenter">font-weight:.....peso da fonte;</p>
+    <p id="pcenter">font-stretch:....grau de espansão/contração dos glifos;</p>
+    <p id="pcenter">
+        font:............maneira abreviada para declarar todas
+        as propriedades anteriores (exceto cor).
+    </p>
     <h2>Tipografia</h2>
     <p>Tipografia das fontes é o sentimento que as fontes passam.</p>
     <div>
@@ -30,17 +43,17 @@
             <tr>
                 <th></th>
                 <th>mono espaçada=</th>
-                <th id="thsmall"> todas as letras tem a mesma quantia de espaço</th>
+                <th id="thsmall"> todas as letras têm a mesma quantia de espaço.</th>
             </tr>
             <tr>
                 <th></th>
                 <th>handwriting=</th>
-                <th id="thsmall">imita a escritra real</th>
+                <th id="thsmall">imita a escrita real</th>
             </tr>
             <tr>
                 <th></th>
                 <th>display</th>
-                <th id="thsmall">fonte que não contem regras</th>
+                <th id="thsmall">fonte que não contém regras</th>
             </tr>
         </table>
     </div>
@@ -82,17 +95,26 @@
             </tbody>
         </table>
     </div>
-    <p>Obsserve a propriedade <strong>font-family:</strong> que signifaca familia da fonte ou seja vai ser colocado o
-        modelo da fonte e mais umas 3 da familia para que se o computador não tiver a fonte vai ler a seguinte, ex:
+    <p>Observe a propriedade <strong>font-family:</strong> que significa família da fonte ou seja vai ser colocado o
+        modelo da fonte e mais umas 3 da família para que se o computador não tiver a fonte vai ler a seguinte, ex:
         <strong>font-family: Arial, Helvetica, sans-serif;</strong>
     </p>
-    <p><strong>Dica:</strong> Para usar combinaçoes corretas de fontes vamos usar os seguites sites, pesquisando no
+    <p><strong>Dica:</strong> Para usar combinações corretas de fontes vamos usar os seguintes sites, pesquisando no
         google &quot;web safe font combinations&quot;</p>
     <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">w3schools.com</a></p>
     <h2>Tamanho da Fonte</h2>
-    <p><strong>font-size=</strong>-&gt;Tamanho da fonte</p>
+    <p>Por padrão no html a fonte tem 1em=16px, agora H1, H2, H3,... já tem as seguintes medidas.
+    </p>
+    <p id="pcenter">h1 = 2em= 32px</p>
+    <p id="pcenter">h2= 1,5em= 24px</p>
+    <p id="pcenter">h3= 1.17= 18.72px</p>
+    <p id="pcenter">h4= 1em= 16px</p>
+    <p id="pcenter">h5= 0.83em= 13.28px</p>
+    <p id="pcenter">h6= 0.67em= 10.72</p>
+
+    <p>A propriedade <strong>font-size=</strong> significa Tamanho da fonte.</p>
     <h3>Medidas Relativas</h3>
-    <p>Medidas relativadas é do seguinte valor,</p>
+    <p>Medidas relativas é do seguinte valor,</p>
     <div>
         <table>
             <tr>
@@ -122,7 +144,7 @@
             </tr>
             <tr>
                 <th>mm=</th>
-                <th id="thsmall">milimetro</th>
+                <th id="th small">milímetro</th>
             </tr>
             <tr>
                 <th>in=</th>
@@ -163,7 +185,7 @@
         <p id="pcenter">%= Porcentagem</p>
     </div>
     <h2>Peso da fonte</h2>
-    <p>Detalhe <strong>weght</strong>significa <q>peso</q>, <strong>width</strong> que signifaca <q>largura</q> e
+    <p>Detalhe <strong>weght</strong>significa <q>peso</q>, <strong>width</strong> que significa <q>largura</q> e
         <strong>height</strong> significa <q>altura</q>
     </p>
     <div>
@@ -189,8 +211,8 @@
         </table>
     </div>
     <h2>Estilos de fontes</h2>
-    <p>font-style: italico ---&gt; Estilo da fonte</p>
-    <p>no css o codigo ficaria bem assim</p>
+    <p>font-style: italic ---&gt; Estilo da fonte</p>
+    <p>no css o código ficaria bem assim</p>
     <div>
         <pre>
             <code>
@@ -203,21 +225,101 @@
             </code>
         </pre>
     </div>
-    <p>Para simplificar vamos usar um <strong><em>shorthand font</em></strong>, suas seguintes propriedades é, Obsserve que tem uma ordem bem especifica a ser seguida.</p>
+    <p>Para simplificar vamos usar um <strong><em>shorthand font</em></strong>, suas seguintes propriedades é, Observe
+        que tem uma ordem bem específica a ser seguida.</p>
     <p><em>font-style, font-weight, font-size, font-family.</em></p>
     <p>Então ficaria assim.
-    <strong><em>font: italic bolder 1.1em 'wok sans', 'sans-serif''</em></strong></p>
-  <h2>importando Fontes</h2>
-  <p>Usando o site <a href="https://fonts.google.com/" target="_blank" rel="fontes do google">Google fontes</a> ou o do site <a href="https://www.dafont.com/pt/" target="_blank" rel="fontes">DaFonte.com</a></p>
-  <p>Para importar vamos usar o css</p>
-  <p>Do google vamos usar @import, após selecionar a font, e então vamos copiar td que estiver dentro do @import vamos colar tudo dentro do css, logo em Seguida vamos pegar a familia dela logo abaixo em <q>CSS rules to specify families</q>, para usar essa fonte onde quisermos
- </p>
+        <strong><em>font: italic bolder 1.1em 'wok sans', 'sans-serif''</em></strong>
+    </p>
+    <h2>Importando Fontes</h2>
+    <p>Usando o site <a href="https://fonts.google.com/" target="_blank" rel="fontes do google">Google fontes</a> ou o
+        do site <a href="https://www.dafont.com/pt/" target="_blank" rel="fontes">DaFonte.com</a></p>
+    <p>Para importar vamos usar o css</p>
+    <p>Do google vamos usar @import, após selecionar a font, e então vamos copiar td que estiver dentro do @import vamos
+        colar tudo dentro do css, logo em Seguida vamos pegar a familia dela logo abaixo em <q>CSS rules to specify
+            families</q>, para usar essa fonte onde quisermos
+    </p>
+    <!-- passar o carretor daki para baixo-->
+    <div>
+        <pre>
+            <code>
+                @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+                h1{
+                    {
+                        font-family:'Charis SIL', serif ;
 
+                }
+               /*--Perceba que vamos só passar a usar a familia da fonte na hr de declarar--*/
 
-
-
-
+            </code>
+        </pre>
+    </div>
+    <p>vai passar a ser assim:</p>
+    <div>
+        <pre>
+            <code>
+                h1 {
+                    font: normal bolder 3em 'Charis SIL', serif;
+                }
+            </code>
+        </pre>
+    </div>
+    <h2>Fontes externas</h2>
+    <p>Fontes externas são as fontes que foram feitas downloads, ao ivés de importar</p>
+    <p>Usaremos então o @fonte-face. </p>
+    <div>
+        <pre>
+            <code>
+                @font-face {
+                    font-family: ;
+                    src: url();
+                }
+            </code>
+        </pre>
+    </div>
+    <p>Dentro de <br> font-family: pode por qualquer nome para fonte ; <br>
+        src: url('aqui o caminho da fonte .o formato') format ('o formato da fonte'), aqui posso repetir outra url se a
+        fonte tiver mais de um formato; <br>
+        fort-weight: normal; <br>
+        fort-style: normal;
+    </p>
+    <p>Um bom exemplo na pratica é uma fonte de coração do site: </p>
+    <div>
+        <pre>
+            <code>
+                @font-face {
+                    font-family: terror;
+                    src: url('../fonts/aAvocadoTaco.otf') format('opentype'), url('../fonts/aAvocadoTaco.ttf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            </code>
+        </pre>
+    </div>
+    <span style="font-family: terror; font-size: 2em">
+        <p>Então a fonte ficaria assim.</p>
+    </span>
+    <p>Obs: foi criada uma pasta fonts, e baixei as fontes la dentro.</p>
+    <h3>Tipos de Formatos</h3>
+    <ul>
+        <li>opentype (otf) <small>normal a que funciona em qualque navegador</small> </li>
+        <li>truetype (ttf) <small>normal funciona em quase todos navegadores</small></li>
+        <li>embedded-opentype</li>
+        <li>truetype-aat (apple advanced Typography)</li>
+        <li>svg</li>
+    </ul>
+<h3>DICAS</h3>
+<P>Como saber tudo sobre a fonte de outro site </P>
+<p>Usanado o plugin(extenção) do google chrome chamada fonte ninja. para baixar <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-br" target="_blank" rel="extenção do google">CLICK AQUI</a></p>
+<P>Porém ele não permite ver a fonte de uma imagem, por isso temos os seguintes sites que identificam a fonte dentro de uma imagem</P>
+<nav>
+    <ur>
+        <li><a href="https://www.myfonts.com/WhatTheFont/" target="_blank" rel="externo">myfonts.com</a></li>
+        <li><a href="https://www.fontsquirrel.com/" target="_blank" rel="externo">fontsquirrel.com</a> </li>
+        <li><a href="https://www.whatfontis.com/" target="_blank" rel="externo">whatfontis.com</a> </li>
+    </ur>
+</nav>
 
 
 </body>
