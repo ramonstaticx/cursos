@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="./style-do-html.css">
     <link rel="shortcut icon" href="./favicon/favicon-32x32.png" type="image/x-icon">
 </head>
-<body class="body-pg">
+
+<body>
     <div>
-        <h1> Atributos Globais e TabIndex</h1>
+        <h1>Atributos Globais,Tab e Indentificadores</h1>
         <h2>Atributos globais</h2>
-        
+<!--passar o corretor ortografico-->
         <ul>
             <li>class</li>
             <li>conteteditable</li>
@@ -24,9 +26,39 @@
             <li>title</li>
         </ul>
     </div>
-    <span>
-        <h2>TABindex</h2>
-        <p>Tabindex serve para dar ordem ao TAB(tecla tab do teclado) 1,2,3</p>
-    </span>
+
+    <h2>TABindex</h2>
+    <p>Tabindex serve para dar ordem ao TAB(tecla tab do teclado) 1,2,3</p>
+
+    <h1>Indentificadores</h1>
+    <p>Aqui vamos ver os <strong>id, class</strong></p>
+    <p>Mas antes temos de saber algumas regras importantes que que faz com que a class seja diferente da id. O <strong> id=</strong> só pode ser usado uma unica vez dentro do documento html, enquanto o <strong>class=</strong> pode ser usada varias vezes,e no Css a <mark>no css a class= vem antes do id=</mark>
+    </p>
+    <div>
+        <p>id= indentificador</p>
+        <p>class= classe</p>
+    </div>
+    <p>Como é declarado o id</p>
+    <div>
+        <p>no html id=</p>
+        <p>no css #Nome-Atribuido <small>(sempre em minusculo)</small></p>
+    </div>
+    <p>Como é declarado a class</p>
+    <div>
+        <p>no html class=</p>
+        <p>no css .Nome-Atribuido <small>(sempre minusculo)</small></p>
+    </div>
+    <pre>
+        <code>
+            &lt;h1 class="principal">texto&lt;/h1>
+        </code>
+    </pre>
+    <h2>Pseudo class</h2>
+    <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor 
+        após um sinal de <ins>dois pontos ( : )</ins> e especificam um estado especial de um elemento. 
+        Existem várias pseudo-classes para estilos, podemos 
+        citar :hover, :visited, :active, :checked, :empty e :focus</p>
+    
 </body>
+
 </html>
