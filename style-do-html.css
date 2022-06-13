@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: terror;
-    src: url('../fonts/aAvocadoTaco.otf') format('opentype'), url('../fonts/aAvocadoTaco.ttf') format('truetype');
+    src: url('./fonts/aAvocadoTaco.otf') format('opentype'), url('./fonts/aAvocadoTaco.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
