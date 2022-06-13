@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-#body-pg {
+.body-pg {
     height: 100vh;
     /*usando em pg que ainda não rolam, para não dar erro no background*/
 }
@@ -32,7 +32,6 @@ html {
 body {
     margin: 8px;
 
-
 }
 
 p {
@@ -41,9 +40,12 @@ p {
     text-indent: 20pt;
 }
 
-#pcenter {
+.pcenter {
     text-align: center;
 
+}
+div>p {
+    text-align: center;
 }
 
 h1 {
@@ -85,10 +87,6 @@ ol {
     text-indent: 8px;
 }
 
-#margen-left {
-    text-align: lefth;
-}
-
 pre {
 
     text-align: justify;
@@ -108,20 +106,38 @@ table {
     margin: auto;
 
 }
-#th {
+.th {
     padding: 8px;
 }
-#tr {
+.tr {
     font-size: small;
     padding: 8px
         /*usado na pagina ancora para deixar a tabela menor*/
 }
 
-#thsmall {
+.thsmall {
     font-size: small;
 }
 
 div.img-center {
                  text-align: center;
+    
+}
+
+a {
+    color: wheat;
+    font-family: 'Charis SIL', serif ;
+}
+
+a:visited {
+    color: rgb(248, 196, 100);
+}
+
+a:hover{
+    color: aqua;
+}
+
+a:active{
+    color:yellowgreen;
     
 }
