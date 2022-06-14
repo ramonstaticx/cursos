@@ -8,6 +8,30 @@
     <title>Atributos globais</title>
     <link rel="stylesheet" href="./style-do-html.css">
     <link rel="shortcut icon" href="./favicon/favicon-32x32.png" type="image/x-icon">
+    <style>
+div.pseudo-texto{
+    font-family: terror;
+    text-align: center;
+    color:yellowgreen
+}
+div.pseudo-texto>p{
+    display: none;
+}
+div.pseudo-texto:hover>p{
+    display: block;
+}
+.pseudo-element{
+    font-size: 1.5em;
+    font-weight:bold ;
+    text-align: center;
+}
+.pseudo-element::before{
+    content: '✍' ;
+}
+.pseudo-element::after{
+    content: '✍';    
+}
+    </style>
 </head>
 
 <body>
@@ -113,7 +137,7 @@
             </code>
         </pre>
     </div>
-    <p>Algumas das pseudo classes e oque fazem:</p>
+    <p>Algumas das pseudo class e oque fazem:</p>
     <div>
         <dl>
             <dt>a:visited{color: darkred}</dt>
@@ -126,6 +150,62 @@
             </dt>
         </dl>
     </div>
+    <h2>Pseudo Elementos</h2>
+    <p>
+        Um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um 
+        seletor após dois sinais de dois pontos ( :: ) e permitem que você formate um pedaço 
+        específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS 
+        são ::before, ::after, ::first-letter, ::first-line.
+    </p>
+    <table>
+        <tr>
+            <th>.especial</th>
+            <th>::before</th>
+            <th>{content: '✍';}</th>
+        </tr>
+        <tr>
+            <th class="th">psdeudo elemento</th>
+            <th class="th">declaração e valor</th>
+            <th class="th">class criada no html</th>
+        </tr>
+    </table>
+    <p>alguns exemplos e as explicaçôes:</p>
+    <pre>
+        <code>
+            .pseudo-element{
+                font-size: 1.5em;
+                font-weight:bold ;
+                text-align: center;
+            }
+            .pseudo-element::before{
+                content: '✍' ;
+               /*simbolo antes do txt*/
+            }
+            .pseudo-element::after{
+                content: '✍';
+                /*simbolo depois do txt*/
+            }
+        </code>
+    </pre>
+    <div class="pseudo-element">
+        veja o código a cima
+    </div>
+    <p><mark>OBSERVE QUE NÃO PODE FALTAR AS ASPAS SIMPLES DENTRO DO content: 'simbolo'</mark></p>
+    <h2>Pai e Filho</h2>
+    <p>Vimos logo a cima que <strong><ins>div>p</ins></strong> isso significa que a <strong><ins>p</ins></strong> é <strong><ins>filho</ins></strong> da <strong><ins>div</ins></strong>, assim fica mais facil para declarar que o paragrafo dentro da quela div vai ter certo valores, mais para isso ela teria de ser uma class ou id, para não ser confundidas com as outras iguais ou parecidas</p>
+    <pre>
+        <code>
+            no html 
+            &lt;div class="p-da-div">
+            &lt;p>texto&lt;/p>
+            &lt;/div>
+
+            no Css
+            .p-da-div>p {
+                /*e aqui dentro a declaração*/
+            }
+        </code>
+    </pre>
 
 </body>
 
