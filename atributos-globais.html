@@ -14,7 +14,7 @@
     <div>
         <h1>Atributos Globais,Tab e Indentificadores</h1>
         <h2>Atributos globais</h2>
-<!--passar o corretor ortografico-->
+        <!--passar o corretor ortografico-->
         <ul>
             <li>class</li>
             <li>conteteditable</li>
@@ -31,8 +31,21 @@
     <p>Tabindex serve para dar ordem ao TAB(tecla tab do teclado) 1,2,3</p>
 
     <h1>Indentificadores</h1>
-    <p>Aqui vamos ver os <strong>id, class</strong></p>
-    <p>Mas antes temos de saber algumas regras importantes que que faz com que a class seja diferente da id. O <strong> id=</strong> só pode ser usado uma unica vez dentro do documento html, enquanto o <strong>class=</strong> pode ser usada varias vezes,e no Css a <mark>no css a class= vem antes do id=</mark>
+    <p>Aqui vamos ver os <strong>id e class</strong></p>
+    <p>Mas antes temos de saber algumas regras importantes que que faz com que a class seja diferente da id. O <strong>
+            id=</strong> só pode ser usado uma unica vez no mesmo elemento(tag) dentro do documento html, enquanto o
+        <strong>class=</strong> pode ser usada varias vezes,e no Css a <mark>no css a class= vem antes do id=</mark>
+    </p>
+    <p>Um bom jeito de se explicar o id= é que ex:</p>
+    <pre>
+        <code>
+            &lt;h1 id= "principal">texto&lt;/h1>
+        </code>
+    </pre>
+    <p>Por o <ins>h1</ins> ter recebido <ins>id</ins> o <ins>valor</ins> <mark>principal(podendo ser qualquer
+            nome)</mark> no mesmo documento <strong>não poderá ter nenhuma id com o mesmo valor</strong>, nem que seja
+        para expecificar novamente a mesma tag. <strong>Porem pode</strong> a mesma <strong>tag </strong>ter um
+        <strong>id</strong> com <strong>valor diferente</strong>.
     </p>
     <div>
         <p>id= indentificador</p>
@@ -47,18 +60,73 @@
     <div>
         <p>no html class=</p>
         <p>no css .Nome-Atribuido <small>(sempre minusculo)</small></p>
+        <p>no html mais de uma class juntas class="valor<sup>1</sup> valor<sup>2</sup></p>
     </div>
     <pre>
         <code>
             &lt;h1 class="principal">texto&lt;/h1>
+            &lt;!--ou duas class juntas-->
+            &lt;h1 class="principal secudario">texto&lt;/h1>
         </code>
     </pre>
     <h2>Pseudo class</h2>
-    <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor 
-        após um sinal de <ins>dois pontos ( : )</ins> e especificam um estado especial de um elemento. 
-        Existem várias pseudo-classes para estilos, podemos 
+    <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor
+        após um sinal de <ins>dois pontos ( : )</ins> e especificam um estado especial de um elemento.
+        Existem várias pseudo-classes para estilos, podemos
         citar :hover, :visited, :active, :checked, :empty e :focus</p>
-    
+    <p>A pseudo-classe é colocada da seguinte forma primeiro a div (tag ou class) depois <strong>:</strong> e então um
+        seletor.</p>
+    <pre>
+            <code>
+                a:hover{
+                    color: aqua;
+                }
+            </code>
+        </pre>
+    <p>Desta forma toda vez que passar o mouse por cima vai ficar da cor aqua(azul bem claro).</p>
+    <p>Vou usar o texto a baixo para usar o :hover de uma forma que mostre outro texto, e logo em seguida vou por todo o
+        codigo abaixo:</p>
+    <div class="pseudo-texto"> VEJA A MAGICA, PASSE O MOUSE POR CIMA
+        <p>A MAGICA ACONTECEU
+        </p>
+    </div>
+    <div>
+        <pre>
+            <code>
+                /* no html*/
+                &lt;div class="pseudo-texto"> VEJA A MAGICA, PASSE O MOUSE POR CIMA
+                    &lt;p>A MAGICA ACONTECEU &lt;/p>
+             &lt;/div>
+
+                   /*no CSS*/
+                   div.pseudo-texto{
+                    font-family: terror;
+                    text-align: center;
+                    color:yellowgreen
+                }
+                div.pseudo-texto>p{
+                    display: none;
+                }
+                div.pseudo-texto:hover>p{
+                    display: block;
+                }
+            </code>
+        </pre>
+    </div>
+    <p>Algumas das pseudo classes e oque fazem:</p>
+    <div>
+        <dl>
+            <dt>a:visited{color: darkred}</dt>
+            <dd>&#9998; link depois de visitado fica vermelho escuro</dd>
+            <dt>a:hover{color:black; text-decoration:underline}
+            <dd>&#9998; ao passar o mouse por cima ficará com sublinhado de preto</dd>
+            </dt>
+            <dt>a:active{color:yellow}
+            <dd>&#9998;fica amarelo bem na hora de clicado</dd>
+            </dt>
+        </dl>
+    </div>
+
 </body>
 
 </html>

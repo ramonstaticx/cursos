@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-.body-pg {
+#body-pg {
     height: 100vh;
     /*usando em pg que ainda não rolam, para não dar erro no background*/
 }
@@ -71,15 +71,16 @@ h3 {
     text-align: center;
 }
 
-li {
+li { 
     list-style-position: inside;
-
+         
 }
 
 ul {
     text-align: left;
     margin-left: 8px;
     text-indent: 8px;
+    list-style-type: disc;
 }
 ol {
     text-align: left;
@@ -87,6 +88,9 @@ ol {
     text-indent: 8px;
 }
 
+dl {
+    margin: 8px;
+}
 pre {
 
     text-align: justify;
@@ -140,4 +144,16 @@ a:hover{
 a:active{
     color:yellowgreen;
     
+}
+ 
+div.pseudo-texto{
+    font-family: terror;
+    text-align: center;
+    color:yellowgreen
+}
+div.pseudo-texto>p{
+    display: none;
+}
+div.pseudo-texto:hover>p{
+    display: block;
 }
