@@ -8,7 +8,7 @@
     src: url('./fonts/aAvocadoTaco.otf') format('opentype'), url('./fonts/aAvocadoTaco.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 * {
     margin: 0 0 0 0;
@@ -22,8 +22,7 @@
 }
 
 html {
-
-    background-image: linear-gradient(to bottom,  rgb(57, 57, 59) 5%,rgb(61, 1, 1) );
+    background-image: linear-gradient(to bottom, rgb(57, 57, 59) 5%, rgb(61, 1, 1));
     background-repeat: no-repeat;
     color: white;
 
@@ -44,18 +43,19 @@ p {
     text-align: center;
 
 }
+
 div>p {
     text-align: center;
 }
 
+
 h1 {
-
-    margin: auto;
+    display: inline-block;
+    background-color: yellow;
     text-align: center;
-    text-shadow: 4px 2px 4px rgb(61, 1, 1);
     color: white;
+    text-shadow: 4px 2px 4px rgb(61, 1, 1);
     font: normal bolder 3em 'Charis SIL', serif;
-
 }
 
 
@@ -64,16 +64,14 @@ h2 {
     color: rgb(227, 245, 147);
     text-shadow: 2px 2px 3px rgb(119, 88, 29);
     font: normal bolder 1.5em 'Charis SIL', serif;
-
 }
 
 h3 {
     text-align: center;
 }
 
-li { 
+li {
     list-style-position: inside;
-         
 }
 
 ul {
@@ -82,6 +80,7 @@ ul {
     text-indent: 8px;
     list-style-type: disc;
 }
+
 ol {
     text-align: left;
     margin-left: 8px;
@@ -91,8 +90,8 @@ ol {
 dl {
     margin: 8px;
 }
-pre {
 
+pre {
     text-align: justify;
     background-color: brown;
     border-radius: 10px;
@@ -102,17 +101,16 @@ pre {
     margin: auto;
     color: aqua;
     white-space: pre-wrap;
-
 }
 
 table {
-
     margin: auto;
-
 }
+
 .th {
     padding: 8px;
 }
+
 .tr {
     font-size: small;
     padding: 8px
@@ -124,25 +122,24 @@ table {
 }
 
 div.img-center {
-                 text-align: center;
-    
+    text-align: center;
+
 }
 
 a {
     color: wheat;
-    font-family: 'Charis SIL', serif ;
+    font-family: 'Charis SIL', serif;
 }
 
 a:visited {
     color: rgb(248, 196, 100);
 }
 
-a:hover{
+a:hover {
     color: aqua;
 }
 
-a:active{
-    color:yellowgreen;
-    
+a:active {
+    color: yellowgreen;
+
 }
- 
