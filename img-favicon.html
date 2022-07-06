@@ -21,7 +21,7 @@
         no foto photoshop.</p>
     <p>Imagens png costumam ser de fundo transparente ótimas para usar em um site. exemplo a imagem abaixo.</p>
     <p>Sobre a tag de Imagem pode ser usada de varias formar um ex:</p>
-    <p>
+    <div class="pre">
     <pre>
             <code>
                 &lt;picture>
@@ -30,7 +30,7 @@
             </code>
         
         </pre>
-    </p>
+    </div>
     <div class="img-center">
         <picture>
             <img src="./imagens/images.jpg" width="10%" alt="imagen do maquin">
@@ -49,14 +49,16 @@
         </picture>
     </div>
     <p>Aqui foi um exemplo dos valores da width</p>
-    <pre>
-        <code>
-            &lt;picture>
-            &lt;img src="../imagens/images.jpg" width="10%" alt="imagen do maquin">
-            &lt;img src="../imagens/images.jpg" width="200" alt="imagen do maquin">
-            &lt;/picture>
-    </code>
-</pre>
+    <div class="pre">
+        <pre>
+            <code>
+                &lt;picture>
+                &lt;img src="../imagens/images.jpg" width="10%" alt="imagen do maquin">
+                &lt;img src="../imagens/images.jpg" width="200" alt="imagen do maquin">
+                &lt;/picture>
+        </code>
+        </pre>
+    </div>
     </div>
     <h2>A forma <q> Correta </q> de se colocar uma Imagem</h2>
     <p>Os melhores formatos para se trabalhar com img é <strong>.jpeg e .png</strong>,
@@ -66,22 +68,24 @@
         algum editor de imagem, criar 3
         tamanhos( 300x300, 700x700 e 1000x1000), para melhor adaptar em qualquer aparelho.
     </p>
-    <p>Esse seria o código com apenas uma imagem.
-    <pre>
-        <code>
-            &lt;picture>
-            &lt;img src="a origem da imagem" alt="sempre o'que a imagen significa">
-            &lt;/picture>
-        </code>
-    </pre>
-    </p>
+    <p>Esse seria o código com apenas uma imagem.</p>
+    <div class="pre">
+        <pre>
+            <code>
+                &lt;picture>
+                &lt;img src="a origem da imagem" alt="sempre o'que a imagen significa">
+                &lt;/picture>
+            </code>
+        </pre>
+    </div>
+   
     <p>Agora vamos ao código que realmente vai fazer a diferença, <strong>e repare que acrescentamos <q>media=</q>com
             50px</strong> a mais em cada imagem para que na hora q diminuir o navegador não dê um pulo e sim suavize.
     </p>
     <p>E tem a seguinte ordem para seguir, da menor para a maior e sempre a última é a maior e não contém a tag
         <q>media</q>, observe o código abaixo.
     </p>
-    <p>
+    <div class="pre">
     <pre>
         <code>
             &lt;picture>
@@ -91,7 +95,7 @@
             &lt;/picture>
         </code>
     </pre>
-    </p>
+    </div>
     <p>Observe que todos finais em relação a ao parametro <q>media</q> ou download, é final <q>type</q>, e por isso para
         saber o parametro type do
         arquivo que estamos pondo usamos o site.</p>
@@ -132,7 +136,7 @@
         <h2>Favicon</h2>
         <p>Favicom é uma forma, de por imagem na aba da página.</p>
         <p>Usando o seguinte código</p>
-        <div>
+        <div class="pre">
             <pre>
             <code>
                 &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -166,7 +170,7 @@
         <p>Para centralizar a imagem usamos o CSS declarando propriedade <strong>margin</strong> com o valor
             <strong>auto</strong>
         </p>
-        <p>
+        <div class="pre">
         <pre>
                 <code>
                     div-><sup>(que contem a imagen)</sup>
@@ -181,7 +185,7 @@
                     }
                 </code>
             </pre>
-        </p>
+        </div>
 
     </div>
 

@@ -98,6 +98,9 @@ dl {
     margin: 8px;
 }
 
+.pre {margin: 20px; 
+}/*corrigindo as margens do pre*/
+
 pre {
     text-align: justify;
     background-color: brown;
