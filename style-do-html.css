@@ -98,8 +98,11 @@ dl {
     margin: 8px;
 }
 
-.pre {margin: 20px; 
-}/*corrigindo as margens do pre*/
+.pre {
+    margin: 20px;
+}
+
+/*corrigindo as margens do pre*/
 
 pre {
     text-align: justify;
@@ -151,5 +154,19 @@ a:hover {
 
 a:active {
     color: yellowgreen;
+
+}
+#next{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#next {
+    width: fit-content;
+    padding: 0 20px;
+    background-color: white;
+    margin-left: 80%;
+    border-radius: 50%;
 
 }
